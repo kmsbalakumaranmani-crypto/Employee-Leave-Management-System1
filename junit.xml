@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="17" failures="0" errors="0" time="5.767">
+  <testsuite name="Leave Management Workflow Suite" errors="0" failures="0" skipped="0" timestamp="2026-10-13T04:05:39" time="3.847" tests="6">
+    <testcase classname="Leave Management Workflow Suite" name="GET /api/leaves/balance returns employee leave balances" time="0.019">
+    </testcase>
+    <testcase classname="Leave Management Workflow Suite" name="POST /api/leaves submits a new leave request (Status = PENDING)" time="0.021">
+    </testcase>
+    <testcase classname="Leave Management Workflow Suite" name="POST /api/leaves rejects invalid date range" time="0.012">
+    </testcase>
+    <testcase classname="Leave Management Workflow Suite" name="GET /api/leaves returns submitted leaves" time="0.012">
+    </testcase>
+    <testcase classname="Leave Management Workflow Suite" name="PUT /api/leaves/:id/status allows Manager to APPROVE leave" time="0.015">
+    </testcase>
+    <testcase classname="Leave Management Workflow Suite" name="Employee cannot approve/reject leave requests" time="0.015">
+    </testcase>
+  </testsuite>
+  <testsuite name="Employee Management API Suite" errors="0" failures="0" skipped="0" timestamp="2026-10-13T04:05:43" time="0.433" tests="4">
+    <testcase classname="Employee Management API Suite" name="Admin can list all employees" time="0.011">
+    </testcase>
+    <testcase classname="Employee Management API Suite" name="Employee is forbidden from listing all employees" time="0.008">
+    </testcase>
+    <testcase classname="Employee Management API Suite" name="Admin can add a new employee" time="0.074">
+    </testcase>
+    <testcase classname="Employee Management API Suite" name="Admin adding duplicate email returns 409 conflict" time="0.068">
+    </testcase>
+  </testsuite>
+  <testsuite name="Authentication API Suite" errors="0" failures="0" skipped="0" timestamp="2026-10-13T04:05:43" time="0.365" tests="4">
+    <testcase classname="Authentication API Suite" name="GET /api/auth/demo-users lists initial demo accounts" time="0.024">
+    </testcase>
+    <testcase classname="Authentication API Suite" name="POST /api/auth/login succeeds with valid employee credentials" time="0.08">
+    </testcase>
+    <testcase classname="Authentication API Suite" name="POST /api/auth/login succeeds with manager credentials" time="0.067">
+    </testcase>
+    <testcase classname="Authentication API Suite" name="POST /api/auth/login fails with invalid credentials" time="0.066">
+    </testcase>
+  </testsuite>
+  <testsuite name="DevOps Probes &amp; Monitoring Endpoints" errors="0" failures="0" skipped="0" timestamp="2026-10-13T04:05:44" time="0.16" tests="3">
+    <testcase classname="DevOps Probes &amp; Monitoring Endpoints" name="GET /health returns 200 with UP status" time="0.012">
+    </testcase>
+    <testcase classname="DevOps Probes &amp; Monitoring Endpoints" name="GET /metrics returns Prometheus format metrics" time="0.011">
+    </testcase>
+    <testcase classname="DevOps Probes &amp; Monitoring Endpoints" name="GET /api/stats/system returns DevOps architecture info" time="0.01">
+    </testcase>
+  </testsuite>
+</testsuites>
